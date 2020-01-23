@@ -42,7 +42,7 @@ C/SIDE to AL Data Migration Toolkit
         #           Tab90000.DataMigrationBuffer.al
         #
 ```
-### How does at work?
+### How does it work?
 The functionality of the `C/SIDE to AL Migration Toolkit` is based on the classic Upgrade Toolkit from Microsoft. As starting point for the migration, all individual tables and/or new fields in standard tables should be available in Microsoft Dynamics NAV 2018 (or newer). 
 
 For example: In general the app tries to move the contact of C/AL table 37, field 50000 into the table extension extending table 37 with field no. 50000. If for some reason you were forced to restructure or remove a field you can use some of the Event Publisher, mentioned below.
