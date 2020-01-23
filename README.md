@@ -42,6 +42,11 @@ C/SIDE to AL Data Migration Toolkit
         #           Tab90000.DataMigrationBuffer.al
         #
 ```
+
+### How to get started?
+There are two ways to use this toolkit. First you can use the latest [Release](https://github.com/sirhc101/cal2al-datamigration/releases) from GitHub and just Install the app to your environment.
+Second you can clone the repository open it directly in Visual Studio Code and publish the app from there.
+
 ### How does it work?
 The functionality of the `C/SIDE to AL Migration Toolkit` is based on the classic Upgrade Toolkit from Microsoft. As starting point for the migration, all individual tables and/or new fields in standard tables should be available in Microsoft Dynamics NAV 2018 (or newer). 
 
@@ -106,3 +111,5 @@ The following event publisher are in place to provide extensiblity to the backup
 ## Known issues
  - The tool has been used in several upgrade project scenarios, but mostly some customer related extensions were necessary. That's not a issue at all, but I just want to point to this, so expect that you also need to do minor extensions please.
  - Runtime is a major factor. Due to the data modell (each field is one record) will customer tables with a lot of records (e.g. G/L Entry) result in a huge buffer table. That need some time. For backup that's usally no issue, but for restore it could be a time issue. Therefor please notice event publisher `OnAfterDataMigrationBufferFilterSet`. This publisher can be used to split the restore process in smaller chunks.
+
+Do you've found an issue using this app? Please let me know at [Issues](https://github.com/sirhc101/cal2al-datamigration/issues) or feel free to fix it directly. Your contribution is appreciated.
