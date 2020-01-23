@@ -1,0 +1,24 @@
+{
+  "id": "78f16204-1df7-40b5-843e-5bd821e2ac4a",
+  "name": "C/SIDE to AL Data Migration for Dynamics 365 Business Central",
+  "publisher": "365 business development",
+  "brief": "C/SIDE to AL Data Migration is providing data migration functionalities to migrate Microsoft Dynamics NAV C/SIDE data to Extension data.",
+  "description": "This app is providing extendable functionalities to backup C/SIDE data into a Buffer table and restoring them into the same or different tables in extensions.",
+  "version": "2.2.0.12925",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "res/logo.png",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 90000,
+    "to": 90005
+  },
+  "runtime": "2.2",
+  "showMyCode": true
+}
