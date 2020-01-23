@@ -6,8 +6,9 @@ Due to a lack of the possibility to transfer data in Microsoft Dynamics standard
 ## Content
 
 ### Objects
+
 | Object Type | Object ID | Object Name |
-| --- | --- | --- | --- |
+| ----------- | --------- | ----------- |
 | Table | 90000 | Data Migration Buffer |
 | Page | 90000 | Data Migration List |
 | Page Extension | 90000 | Data Migration |
@@ -89,8 +90,9 @@ After the restore process is finished in general the `Data Migration Buffer` tab
 
 ### Event Publisher
 The following event publisher are in place to provide extensiblity to the backup and restore process:
+
 | Object Type | Object ID | Object Name | Publisher Name | Possible use for |
-| --- | --- | --- | --- | --- |
+| ----------- | --------- | ----------- | -------------- | ---------------- |
 | Table | 90000 | Data Migration Buffer | OnBeforeAssignValueToBuffer | Manipulate the data which will be stored at the `Data Migration Buffer` table.<br/>Additionally this can be used to support additional data types.<br /><br />_`Handled` Pattern is applied._|
 | Table | 90000 | Data Migration Buffer | OnAfterAssignValueToBuffer | Store additional information to the `Data Migration Buffer` table. |
 | Table | 90000 | Data Migration Buffer | OnBeforeGetValueFromBuffer | Ignore data, map to other fields or extend/manipulate data.<br /> <br />_`Handled` Pattern is applied._|
