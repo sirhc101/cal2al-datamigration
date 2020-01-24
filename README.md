@@ -50,7 +50,7 @@ Second you can clone the repository open it directly in Visual Studio Code and p
 ### How does it work?
 The functionality of the `C/SIDE to AL Migration Toolkit` is based on the classic Upgrade Toolkit from Microsoft. As starting point for the migration, all individual tables and/or new fields in standard tables should be available in Microsoft Dynamics NAV 2018 (or newer). 
 
-For example: In general the app tries to move the contact of C/AL table 37, field 50000 into the table extension extending table 37 with field no. 50000. If for some reason you were forced to restructure or remove a field you can use some of the Event Publisher, mentioned below.
+For example: In general the app tries to move the content of C/AL table 37, field 50000 into the table extension extending table 37 with field no. 50000. If for some reason you were forced to restructure or remove a field you can use some of the Event Publisher, mentioned below.
 
 #### 1.) Backup
 At the beginning the `C/SIDE to AL Data Migration for Dynamics 365 Business Central` app is installed. Afterwards the backup process needs to be started to transfer data from the C/SIDE tables to the table id 90000 `Data Migration Buffer`. You can start the backup process by clicking the `Step 1 - Backup Data` action in the page `Company Information` page.
